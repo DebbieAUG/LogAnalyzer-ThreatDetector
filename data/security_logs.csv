@@ -1,0 +1,24 @@
+timestamp,event_type,user,ip,status,resource,details
+2026-11-24 09:00:01,LOGIN,alice,192.168.1.10,SUCCESS,/login,Normal login
+2026-11-24 09:01:02,LOGIN,admin,185.22.91.14,FAILED,/login,Invalid password
+2026-11-24 09:01:05,LOGIN,admin,185.22.91.14,FAILED,/login,Invalid password
+2026-11-24 09:01:08,LOGIN,admin,185.22.91.14,FAILED,/login,Invalid password
+2026-11-24 09:01:11,LOGIN,admin,185.22.91.14,FAILED,/login,Invalid password
+2026-11-24 09:01:14,LOGIN,admin,185.22.91.14,SUCCESS,/login,Successful login
+2026-11-24 09:02:00,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:01,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:02,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:03,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:04,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:05,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:02:06,REQUEST,bob,10.0.0.15,200,/products,GET /products
+2026-11-24 09:03:12,REQUEST,unknown,45.77.23.10,400,/search,' OR '1'='1
+2026-11-24 09:03:15,REQUEST,unknown,45.77.23.10,400,/search,UNION SELECT username password FROM users
+2026-11-24 09:04:00,PRIVILEGE,student,10.0.0.20,SUCCESS,/admin,ADMIN_ROLE_GRANTED
+2026-11-24 09:05:00,LOGIN,john,10.0.0.25,FAILED,/login,Invalid password
+2026-11-24 09:05:10,LOGIN,john,10.0.0.25,FAILED,/login,Invalid password
+2026-11-24 09:05:20,LOGIN,john,10.0.0.25,FAILED,/login,Invalid password
+2026-11-24 09:05:30,LOGIN,john,10.0.0.25,FAILED,/login,Invalid password
+2026-11-24 09:05:40,LOGIN,john,10.0.0.25,FAILED,/login,Invalid password
+2026-11-24 09:10:00,LOGIN,mary,10.0.0.30,SUCCESS,/login,Normal login
+2026-11-24 09:12:00,REQUEST,mary,10.0.0.30,200,/dashboard,Normal request
